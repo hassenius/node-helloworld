@@ -1,5 +1,7 @@
 ---
 applications:
-- name:    hello-node
-  host:    hello-node
+- name:    hello-proxy
+  host:    hello-proxy
   memory:  128M
+  buildpack: https://github.com/hassenius/nodejs-buildpack.git
+  command: sh /home/vcap/app/boot.sh
